@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/simple-adaptive-slider.css">
+    <title>The Holy Cross Brewing Society</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__menu _container">
+                <div class="header__left-side">
+                    <div class="burger">
+                        <input type="checkbox" id="check" onclick="myFunction()">
+                        <label for="check" class="checkbtn">
+                            <span></span>
+                        </label>
+                        <nav class="header__nav">
+                            <ul>
+                                <li class="header__nav-item"><a href="https://instagram.com/the_holy_cross_brewing_society?igshid=YmMyMTA2M2Y=">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="index.html" class="header__name">The Holy Cross Brewing Society</a>
+                </div>
+                <div class="header__logo-box">
+                    <img src="img/logo.jpg" alt="logo" class="header__logo">
+                </div>
+                <div class="header__right-side">
+                    <a class="header__contact" href="https://instagram.com/the_holy_cross_brewing_society?igshid=YmMyMTA2M2Y=">Contact Us</a>
+                    <a class="header__directions" href="https://goo.gl/maps/EmTi73zmhSzeQaVC6">Get Directions</a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="page__logo">
+                <div class="main__logo _container">
+                    <img src="img/mainLogo.jpg" alt="main-logo" class="main__logo-img">
+                </div>
+            </div>
+            <div class="page__slider">
+                <div class="itcss">
+                    <div class="itcss__wrapper">
+                        <div class="itcss__items">
+                            <div class="itcss__item">
+                                <div class="itcss_slide">
+                                    <img src="img/slider/1.jpg" alt="slide" class="slide__img">
+                                </div>
+                            </div>
+                            <div class="itcss__item">
+                                <div class="itcss_slide">
+                                    <img src="img/slider/4.jpg" alt="slide" class="slide__img">
+                                </div>
+                            </div>
+                            <div class="itcss__item">
+                                <div class="itcss_slide">
+                                    <img src="img/slider/2.jpg" alt="slide" class="slide__img">
+                                </div>
+                            </div>
+                            <div class="itcss__item">
+                                <div class="itcss_slide">
+                                    <img src="img/slider/3.jpg" alt="slide" class="slide__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+                    <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__menu _container">
+                <a class="footer__contact" href="https://instagram.com/the_holy_cross_brewing_society?igshid=YmMyMTA2M2Y=">Contact Us</a>
+                <div class="footer__logo-box">
+                    <img src="img/logo.jpg" alt="logo" class="header__logo">
+                </div>   
+                <a class="footer__directions" href="https://goo.gl/maps/EmTi73zmhSzeQaVC6">Get Directions</a>
+            </div>
+        </footer>
+    </div>
+    <!-- JS slider -->
+    <script defer src="js/simple-adaptive-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        // installation slider
+        const slider = new ItcSimpleSlider('.itcss', {
+            loop: true,
+            autoplay: true,
+            swipe: true
+        });
+        });
+    </script>
+</body>
+</html>
